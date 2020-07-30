@@ -1,14 +1,10 @@
 # Project Overview
-
+## Project Link
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
+|Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline `backend` and `frontend`| Incomplete
 |Day 2| Working RestAPI | Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
@@ -17,7 +13,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+For my unit 02 project, I am going to create a to-do list tracker for a company and its employees. There will be a static header/jumbotron that stays the same for every user request. Each user request will either create a new employee (with their name, title, and to-do items displayed), edit/update an employee, delete an employee, create a new to-do item for a specific employee, edit/update a to-do item, or delete a to-do item. 
+
+As each employee or employee to-do is created, edited or updated on the webpage, it'll be sent to a backend server to update the relevant data and show the user an updated webpage to reflect the changes.
 
 ## Google Sheet
 
