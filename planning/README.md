@@ -36,9 +36,9 @@ For my unit 02 project, I am going to create a to-do list tracker for a company 
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219267/project-2-assets/mobile_p21jo3.pdf)
-- [Tablet](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219263/project-2-assets/tablet_zsp7tp.pdf)
-- [Desktop](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219269/project-2-assets/desktop_fpzjhs.pdf)
+- [Mobile](https://github.com/jordanchude/to-do-list-frontend/blob/master/planning/wireframe-assets/mobile.pdf)
+- [Tablet](https://github.com/jordanchude/to-do-list-frontend/blob/master/planning/wireframe-assets/tablet.pdf)
+- [Desktop](https://github.com/jordanchude/to-do-list-frontend/blob/master/planning/wireframe-assets/desktop.pdf)
 
 ## Time/Priority Matrix 
 
