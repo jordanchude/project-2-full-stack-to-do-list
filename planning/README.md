@@ -42,7 +42,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Time/Priority Matrix 
 
-- [Link]()
+- [Link](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596220020/project-2-assets/frontend-time-priority-matrix_qddjuq.jpg)
 
 ## MVP (examples)
 
@@ -66,7 +66,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | --- | --- | :---: |  :---: | :---: |
 | A | Wireframing | M | 2hr | -hr |
 | B | Navigation Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
-| C | Employee Skeleton - Mobile, Tablet, and Desktop | M | 2hr | -hr |
+| C | Employee Skeleton - Mobile, Tablet, and Desktop | H | 2hr | -hr |
 | D | Footer Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
 | E | Deployment | H | 1hr | -hr |
 | F | Debugging | H | 3hr | -hr |
