@@ -48,7 +48,7 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-[Link]()
+- [Link]()
 
 ## MVP (examples)
 
@@ -70,34 +70,33 @@ Wireframing Resources:
 #### MVP
 | Letter | Component | Priority | Estimated Time | Time Invested |
 | --- | --- | :---: |  :---: | :---: |
-| A | Design Research | L | 1hr | -hr |
-| B | Wireframing | M | 2hr | -hr |
-| C | Navigation Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
-| D | Employee Skeleton - Mobile, Tablet, and Desktop | M | 2hr | -hr |
-| E | Footer Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
-| F | Deployment | H | 1hr | -hr |
-| G | Debugging | H | 3hr | -hr |
-| H | Documentation | H | 1hr | -hr |
+| A | Wireframing | M | 2hr | -hr |
+| B | Navigation Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
+| C | Employee Skeleton - Mobile, Tablet, and Desktop | M | 2hr | -hr |
+| D | Footer Skeleton - Mobile, Tablet, and Desktop | H | 1hr | -hr |
+| E | Deployment | H | 1hr | -hr |
+| F | Debugging | H | 3hr | -hr |
+| G | Documentation | H | 1hr | -hr |
 | -- | Total | -- | 13hrs| -hrs |
 
 #### PostMVP
 | Letter | Component | Priority | Estimated Time | Time Invested |
 | --- | --- | :---: |  :---: | :---: |
+| H | Design Research | L | 1hr | -hr |
 | I | Navbar Styling | L | 1hr | -hr |
 | J | Hero Styling | L | 1hr | -hr |
 | K | Employee Styling | M | 1hr | -hr |
 | L | Footer Styling | L | 1hr | -hr |
 | M | Element Fade In Functionality | L | 1hr | -hr |
 | N | Smooth Scrolling for Links | L | 1hr | -hr |
-| O | Refactor | H | 2hr | -hr |
-| P | Total | H | 10hrs| 3hrs |
+| O | Refactor | M | 2hr | -hr |
+| -- | Total | H | 9hrs| -hrs |
 
 ## Additional Libraries
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
 
-
-## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+## Code Snippet 
 
 ```
 function reverse(string) {
@@ -106,12 +105,7 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier               
 **RESOLUTION**: Missing comma after first object in sources {} object
-
-## Previous Project Worksheet
- - [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)
- - [Best of class readme](https://github.com/jkeohan/fewd-class-repo/blob/master/final-project-worksheet/project-worksheet-examples/portfolio-gracie.md)
