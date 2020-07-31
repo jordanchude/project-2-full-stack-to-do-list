@@ -36,15 +36,9 @@ For my unit 02 project, I am going to create a to-do list tracker for a company 
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile]()
-- [Tablet]()
-- [Desktop]()
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
-
+- [Mobile](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219267/project-2-assets/mobile_p21jo3.pdf)
+- [Tablet](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219263/project-2-assets/tablet_zsp7tp.pdf)
+- [Desktop](https://res.cloudinary.com/dpjdvsigb/image/upload/v1596219269/project-2-assets/desktop_fpzjhs.pdf)
 
 ## Time/Priority Matrix 
 
