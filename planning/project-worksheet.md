@@ -1,5 +1,11 @@
-# Project Overview
+# Project (Frontend) Overview
+
 ## Project Link
+- TBD
+
+## Project (Backend) Overview
+- [Backend Overview](https://github.com/jordanchude/to-do-list-backend)
+
 ## Project Schedule
 
 |  Day | Deliverable | Status
@@ -13,9 +19,9 @@
 
 ## Project Description
 
-For my unit 02 project, I am going to create a to-do list tracker for a company and its employees. There will be a static header/jumbotron that stays the same for every user request. Each user request will either create a new employee (with their name, title, and to-do items displayed), edit/update an employee, delete an employee, create a new to-do item for a specific employee, edit/update a to-do item, or delete a to-do item. 
+For my unit 02 project, I am going to create a to-do list tracker for a company and its employees. For the frontend, components include a responsive navigation bar, a static header/jumbotron that stays the same for every user request and promotes the app, and section that shows each employee's photo, name, and to-dos, and a footer for general company information. 
 
-As each employee or employee to-do is created, edited or updated on the webpage, it'll be sent to a backend server to update the relevant data and show the user an updated webpage to reflect the changes.
+Each user request will either create a new employee (with their name, title, and to-do items displayed), edit/update an employee, delete an employee, create a new to-do item for a specific employee, edit/update a to-do item, or delete a to-do item. As each employee or employee to-do is created, edited or updated on the webpage, it'll be sent to a backend server to update the relevant data and show the user an updated webpage to reflect the changes.
 
 ## Google Sheet
 
