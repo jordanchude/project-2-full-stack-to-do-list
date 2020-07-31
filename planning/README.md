@@ -4,7 +4,7 @@
 - TBD
 
 ## Project (Backend) Overview
-- [Backend Overview](https://github.com/jordanchude/to-do-list-backend)
+- [Backend Overview](https://github.com/jordanchude/to-do-list-backend/blob/master/planning/README.md)
 
 ## Project Schedule
 
@@ -30,7 +30,7 @@ For my unit 02 project, I am going to create a to-do list tracker for a company 
 
 ## Google Sheet
 
-- [Link](https://github.com/jordanchude/to-do-list-frontend) 
+- [Link](https://docs.google.com/spreadsheets/d/1DRhpnHYU-LVnRYKSALXm_xbMCZ3FsTs6Zl-VJ1MU49E/edit?usp=sharing) 
 
 ## Wireframes
 
