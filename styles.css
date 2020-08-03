@@ -1,3 +1,10 @@
 body {
     color: black;
 }
+
+/* Bootstrap Default Resets */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
