@@ -6,6 +6,7 @@ const $employeeCard = $('#employee-card');
 const getEmployees = async () => {
     const response = await fetch(`${URL}`);
     const data = await response.json();
+
     data.forEach((employee) => {
         const $colDiv = $('<div class="col-xs-12 col-sm-6">');
         const $cardDiv = $('<div class="card">');
@@ -37,7 +38,7 @@ const getEmployees = async () => {
         $cardDiv.append($cardLinkDiv);
     })
     for (let i = 0; i < data.length; i++) {
-        const $update = $('<a href="#" class="card-link">').text('Update').attr("objectid", data[i]._id).on("click", (e) => {
+        const $update = $('<a href="#" class="card-link">').text('Update').attr("id", data[i]._id).on("click", (e) => {
             $("[button='update']").attr("id", e.target.id);
             $('#nameinput').val(`Updated Name`);
             $('#titleinput').val(`Updated Title`);
@@ -86,6 +87,29 @@ const deleteEmployee = async () => {
 }
 
 
+const createEmployee = async () => {
+    const newEmployee = {
+        name: $('#nameinput').val(),
+        title: $('#titleinput').val(),
+        photo: $('#photoinput').val()
+    }
+
+    const response = await fetch(`${URL}`, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newEmployee)
+    })
+
+    $('#nameinput').val("")
+    $('#titleinput').val("")
+    $('#photoinput').val("")
+
+    $employeeCard.empty();
+    getEmployees();
+}
+
 const updateEmployee = async () => {
     const updatedEmployee = {
         name: $('#nameinput').val(),
@@ -93,17 +117,20 @@ const updateEmployee = async () => {
         photo: $('#photoinput').val()
     }
 
-    const response = await fetch(`${URL}${event.target.id}`);
-    
-    // , {
-    //     method: "put",
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify(updatedEmployee)
-    // });
+    const response = await fetch(`${URL}${event.target.id}`, {
+        method: "put",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedEmployee)
+    });
 
-    console.log(`${URL}${event.target.id}`);
+    $('#nameinput').val("")
+    $('#titleinput').val("")
+    $('#photoinput').val("")
+    
+    $employeeCard.empty();
+    getEmployees();
 }
 
 $('#todobutton').on('click', createToDo);
