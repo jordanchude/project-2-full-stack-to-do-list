@@ -29,7 +29,7 @@
        <!-- navigation -->
        <div class="row" id="home">
            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand">Employee To-Dos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,24 +66,29 @@
            </div>
        <!-- end of row -->
        </div>
-        <form id="add">
-            <div>
-                <input type=text name="name" id="nameinput"/>
-                <label for="name">Name</label>
-            </div>
-            <div>
-                <input type="text" name="title" id="titleinput">
-                <label for="title">Title</label>
-            </div>
-            <div>
-                <input type="text" name="photo" id="photoinput">
-                <label for="photo">Photo URL</label>
-            </div>
-            <div>
-                <button button="create" type="button" onclick="createEmployee()">Create</button>
-                <button button="update" type="button" onclick="updateEmployee()">Submit Update</edit> 
-            </div>
-        </form>
+       <div class="row form-row">
+           <div class="col-xs-12 form-col">
+               <h5>Add/Update Employee</h5>
+                <form id="add">
+                    <div>
+                        <input type=text name="name" id="nameinput"/>
+                        <label for="name">Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="title" id="titleinput">
+                        <label for="title">Title</label>
+                    </div>
+                    <div>
+                        <input type="text" name="photo" id="photoinput">
+                        <label for="photo">Photo URL</label>
+                    </div>
+                    <div>
+                        <button button="create" type="button" onclick="createEmployee()">Create</button>
+                        <button button="update" type="button" onclick="updateEmployee()">Submit Update</edit> 
+                    </div>
+                </form>
+           </div>
+       </div>
        <!-- cards -->
        <div class="row" id="employee-card">
            <!-- DATABSE DATA -->

@@ -8,7 +8,7 @@ const getEmployees = async () => {
     const data = await response.json();
 
     data.forEach((employee) => {
-        const $colDiv = $('<div class="col-xs-12 col-sm-6">');
+        const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-4 col-lg-3">');
         const $cardDiv = $('<div class="card">');
         const $img = $('<img class="card-img-top">');
         const $cardBodyDiv = $('<div class="card-body">');
@@ -19,7 +19,7 @@ const getEmployees = async () => {
         
         $('#employee-card').append($colDiv);
         $img.attr('src', employee.photo);
-        $cardDiv.attr('style', 'width: 18rem');
+        // $cardDiv.attr('style', 'width: 18rem');
         $colDiv.append($cardDiv);
         $cardDiv.append($img);
         $cardDiv.append($cardBodyDiv);

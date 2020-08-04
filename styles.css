@@ -1,5 +1,6 @@
 :root {
-    --main: #485696;
+    --main: #FDE8E9;
+    --secondary: #E3BAC6;
 }
 
 /* Bootstrap Default Resets */
@@ -9,23 +10,60 @@
     width: 100%;
 }
 
+.row {
+    padding: 0;
+    margin: 0;
+}
+.col {
+    padding: 0;
+    margin: 0;
+}
+
+/* navigation */
 .navbar {
     background-color: var(--main);
-    color: white;
 }
 
-.navbar a {
-    color: white;
-}
-
+/* jumbotron */
 .jumbotron {
     background: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
     background-size: cover;
     height: 30vh;
     background-position: center;
-    color: white;
+    margin: 0;
 }
 
 .jumbotron-text {
-    
+    color: white;
+    text-shadow: 1px 2px black;
+}
+
+
+.form-row {
+    background-color: var(--main);
+    width: auto;
+}
+
+.form-col {
+    margin: 0 auto;
+    color: black;
+    padding: 2% 0px 2% 0px;
+}
+
+.form-col button {
+    border-radius: 20px;
+    border-style: none;
+    background: var(--secondary);
+    margin: 10px 0px 0px 0px;
+    padding: 3%;
+    box-shadow: 1px 2px 2px black;
+}
+
+#employee-card {
+    background: var(--secondary);
+    padding: 5%;
+}
+
+.cards {
+    margin-top: 10px;
 }
