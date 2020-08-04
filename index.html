@@ -22,7 +22,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- User JS -->
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
    <main class="container-fluid">
@@ -69,11 +69,28 @@
            </div>
        <!-- end of row -->
        </div>
-
+        <form>
+            <div>
+                <input type=text name="name" id="nameinput"/>
+                <label for="name">Name</label>
+            </div>
+            <div>
+                <input type="text" name="title" id="titleinput">
+                <label for="title">Title</label>
+            </div>
+            <div>
+                <input type="text" name="photo" id="photoinput">
+                <label for="photo">Photo URL</label>
+            </div>
+            <div>
+                <button button="create">Create</button>
+                <button button="update" onclick="updateEmployee()">Submit Update</edit> 
+            </div>
+        </form>
        <!-- cards -->
        <div class="row" id="employee-card">
-           <div class="col-3">
-                <div class="card" style="width: 18rem;">
+           <!-- <div class="col-3">
+                <!-- <div class="card" style="width: 18rem;">
                 <img src="https://res.cloudinary.com/dpjdvsigb/image/upload/v1594764618/Jordan_Chude_Williams_Press_Photo_han403.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CEO</h5>
@@ -89,10 +106,32 @@
                     <a href="#" class="card-link">Another link</a>
                 </div>
                 </div>
-           <!-- end of column -->
-           </div>
+           end of column -->
+           <!-- </div> -->
        <!-- end of row -->
        </div>
+       <!-- Add Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add To Do</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="toDo">To do:</label>
+                        <input type=text name="toDo" id="toDoInput"/>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="todobutton">Submit</button>
+                </div>
+                </div>
+            </div>
+        </div>
    </main>
 </body>
 </html>
