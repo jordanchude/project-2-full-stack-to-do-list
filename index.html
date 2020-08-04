@@ -27,26 +27,23 @@
 <body>
    <main class="container-fluid">
        <!-- navigation -->
-       <div class="row">
+       <div class="row" id="home">
            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand">Employee To-Dos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#add">Add</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#employee-card" tabindex="-1" aria-disabled="true">View</a>
                     </li>
                     </ul>
                 </div>
@@ -60,16 +57,16 @@
        <div class="row">
            <div class="col">
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <div class="container jumbotron-text">
+                        <h1 class="display-4">Employee To Dos</h1>
+                        <p class="lead">Say on top of your tasks, stay on top of your company</p>
                     </div>
                 </div>  
            <!-- end of column -->
            </div>
        <!-- end of row -->
        </div>
-        <form>
+        <form id="add">
             <div>
                 <input type=text name="name" id="nameinput"/>
                 <label for="name">Name</label>
@@ -89,26 +86,7 @@
         </form>
        <!-- cards -->
        <div class="row" id="employee-card">
-           <!-- <div class="col-3">
-                <!-- <div class="card" style="width: 18rem;">
-                <img src="https://res.cloudinary.com/dpjdvsigb/image/upload/v1594764618/Jordan_Chude_Williams_Press_Photo_han403.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">CEO</h5>
-                    <h5 class="card-subtitle">Jordan Williams</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-                </div>
-           end of column -->
-           <!-- </div> -->
-       <!-- end of row -->
+           <!-- DATABSE DATA -->
        </div>
        <!-- Add Modal -->
         <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
