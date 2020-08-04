@@ -30,7 +30,7 @@ const getEmployees = async () => {
         $cardDiv.append($ul);
         
         for (let i=0; i < employee.toDos.length; i++) {
-            const $li = $('<li class="list-group-item">');
+            const $li = $('<li class="list-group-item" onclick="deleteToDo()">').attr("id", employee.toDos[i]._id);
             $li.text(employee.toDos[i].toDo);
             $ul.append($li);
         }
@@ -85,6 +85,15 @@ const deleteEmployee = async () => {
   $employeeCard.empty();
   getEmployees();
 }
+
+const deleteToDo = async () => {
+    const response = await fetch(`${URL}todo/${event.target.id}`, {
+        method: "delete"
+    });
+    $employeeCard.empty();
+    getEmployees();
+}
+
 
 
 const createEmployee = async () => {

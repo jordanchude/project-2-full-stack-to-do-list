@@ -1,6 +1,6 @@
 :root {
-    --main: #FDE8E9;
-    --secondary: #E3BAC6;
+    --main: #EF6461;
+    --secondary: white;
 }
 
 /* Bootstrap Default Resets */
@@ -38,9 +38,8 @@
     text-shadow: 1px 2px black;
 }
 
-
 .form-row {
-    background-color: var(--main);
+    background-color: var(--secondary);
     width: auto;
 }
 
@@ -53,7 +52,7 @@
 .form-col button {
     border-radius: 20px;
     border-style: none;
-    background: var(--secondary);
+    background: var(--main);
     margin: 10px 0px 0px 0px;
     padding: 3%;
     box-shadow: 1px 2px 2px black;
