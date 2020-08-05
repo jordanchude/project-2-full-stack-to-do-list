@@ -40,9 +40,9 @@ const getEmployees = async () => {
     for (let i = 0; i < data.length; i++) {
         const $update = $('<a href="#" class="card-link">').text('Update').attr("id", data[i]._id).on("click", (e) => {
             $("[button='update']").attr("id", e.target.id);
-            $('#nameinput').val(`Updated Name`);
-            $('#titleinput').val(`Updated Title`);
-            $('#photoinput').val(`Updated Photo URL`);
+            $('#nameinput').val(data[i].name);
+            $('#titleinput').val(data[i].title);
+            $('#photoinput').val(data[i].photo);
             
         });
         $('.link-div').eq(i).append($update);
@@ -74,6 +74,7 @@ const createToDo = async () => {
         },
         body: JSON.stringify(newToDo)
     });
+    $('#toDoInput').val('');
     $employeeCard.empty();
     getEmployees();
 }

@@ -3,6 +3,10 @@
     --secondary: white;
 }
 
+main {
+    min-height: 95vh;
+}
+
 /* Bootstrap Default Resets */
 .container-fluid {
     padding: 0;
@@ -83,4 +87,5 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
+    width: 100%;
 }
