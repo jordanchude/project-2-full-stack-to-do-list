@@ -9,7 +9,7 @@ const getEmployees = async () => {
 
     data.forEach((employee) => {
         const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-4 col-lg-3">');
-        const $cardDiv = $('<div class="card">');
+        const $cardDiv = $('<div class="card employee">');
         const $img = $('<img class="card-img-top">');
         const $cardBodyDiv = $('<div class="card-body">');
         const $cardTitle = $('<h4 class="card-title">');
