@@ -75,3 +75,12 @@
     border: 4px solid var(--main);
     border-radius: 10px;
 }
+
+footer {
+    display: flex;
+    height: 5vh;
+    background: var(--main);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
