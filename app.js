@@ -15,7 +15,7 @@ const getEmployees = async () => {
 
     //create containers and elements with relevant bootstrap classes
     data.forEach((employee) => {
-        const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-4 col-lg-3">');
+        const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-4 col-xl-3">');
         const $cardDiv = $('<div class="card employee">');
         const $img = $('<img class="card-img-top">');
         const $cardBodyDiv = $('<div class="card-body">');
@@ -25,8 +25,11 @@ const getEmployees = async () => {
         const $cardLinkDiv = ('<div class="card-body link-div">');
         
         $('#employee-card').append($colDiv);
-        $img.attr('src', employee.photo);
-        // $cardDiv.attr('style', 'width: 18rem');
+
+        //image styling
+        $img.css('background-image', `url(${employee.photo})`).css('width', 'auto').css('height', '300px');
+        $img.css('background-size', 'cover').css('background-position', 'center').css('background-repeat', 'no-repeat');
+    
         $colDiv.append($cardDiv);
         $cardDiv.append($img);
         $cardDiv.append($cardBodyDiv);
@@ -54,7 +57,7 @@ const getEmployees = async () => {
     //crate update, delete, and add task links for each employee
     for (let i = 0; i < data.length; i++) {
         //create update button that sends object information to form to edit
-        const $update = $('<a href="#" class="card-link">').text('Update').attr("id", data[i]._id).on("click", (e) => {
+        const $update = $('<a href="#add" class="card-link">').text('Update').attr("id", data[i]._id).on("click", (e) => {
             $("[button='update']").attr("id", e.target.id);
             $('#nameinput').val(data[i].name);
             $('#titleinput').val(data[i].title);
@@ -110,8 +113,7 @@ const deleteEmployee = async () => {
   const response = await fetch(`${URL}${event.target.id}`, {
       method: "delete"
   });
-
-  console.log(`${event.target.id}`);
+  
   //empty employee section
   $employeeCard.empty();
   //re-populate updated employee section
