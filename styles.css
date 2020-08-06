@@ -1,8 +1,11 @@
+
+/* css variables */
 :root {
     --main: #EF6461;
     --secondary: white;
 }
 
+/* main section */
 main {
     min-height: 95vh;
 }
@@ -42,6 +45,7 @@ main {
     text-shadow: 1px 2px black;
 }
 
+/* form */
 .form-row {
     background-color: var(--secondary);
     width: auto;
@@ -56,8 +60,6 @@ main {
 }
 
 .form-col button {
-    /* border-radius: 20px; */
-    /* border-style: none; */
     background: var(--main);
     color: white;
     margin: 10px 0px 0px 0px;
@@ -65,14 +67,17 @@ main {
     box-shadow: 1px 2px 2px black;
 }
 
+/* employee section */
 #employee-card {
+    display: flex;
+    flex-direction: row;
     background: var(--secondary);
-    padding: 5%;
+    text-align: center;
+    justify-content: center;
 }
 
 .cards {
-    margin: 10px 10px 0px 10px;
-    padding: 0;
+    margin: 1% 0 1% 0;
 }
 
 .employee {
@@ -80,6 +85,7 @@ main {
     border-radius: 10px;
 }
 
+/* footer */
 footer {
     display: flex;
     height: 5vh;
