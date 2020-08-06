@@ -15,7 +15,7 @@ const getEmployees = async () => {
 
     //create containers and elements with relevant bootstrap classes
     data.forEach((employee) => {
-        const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-3">');
+        const $colDiv = $('<div class="cards col-xs-12 col-sm-6 col-md-4 col-lg-3">');
         const $cardDiv = $('<div class="card employee">');
         const $img = $('<img class="card-img-top">');
         const $cardBodyDiv = $('<div class="card-body">');
@@ -39,9 +39,14 @@ const getEmployees = async () => {
         //Loop through employee to dos to create list item with deleteToDo event listener
         for (let i=0; i < employee.toDos.length; i++) {
             //give list item/to do its accompanying object id in database
-            const $li = $('<li class="list-group-item" onclick="deleteToDo()">').attr("id", employee.toDos[i]._id);
+            const $li = $('<li class="list-group-item">').attr("id", employee.toDos[i]._id);
             $li.text(employee.toDos[i].toDo);
             $ul.append($li);
+
+            // const $li = $('<li class="list-group-item" onclick="deleteToDo()">').attr("id", employee.toDos[i]._id);
+            const $button = $('<button class="button btn btn-danger" onclick="deleteToDo()">').text("Delete")
+            $button.attr('id', employee.toDos[i]._id)
+            $li.append($button);
         }
 
         $cardDiv.append($cardLinkDiv);
@@ -105,6 +110,8 @@ const deleteEmployee = async () => {
   const response = await fetch(`${URL}${event.target.id}`, {
       method: "delete"
   });
+
+  console.log(`${event.target.id}`);
   //empty employee section
   $employeeCard.empty();
   //re-populate updated employee section
@@ -180,6 +187,10 @@ const updateEmployee = async () => {
     $employeeCard.empty();
     //re-populate updated employee section
     getEmployees();
+}
+
+const logEvent = () => {
+    console.log(event.target.id);
 }
 
 //to do button event listener
