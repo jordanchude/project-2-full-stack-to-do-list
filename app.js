@@ -113,6 +113,10 @@ const deleteEmployee = async () => {
   const response = await fetch(`${URL}${event.target.id}`, {
       method: "delete"
   });
+
+    $('#nameinput').val("")
+    $('#titleinput').val("")
+    $('#photoinput').val("")
   
   //empty employee section
   $employeeCard.empty();
@@ -121,7 +125,7 @@ const deleteEmployee = async () => {
 }
 
 //delete to do
-const deleteToDo = async () => {
+const deleteToDo = async (e) => {
     //delete todo based on object id
     const response = await fetch(`${URL}todo/${event.target.id}`, {
         method: "delete"
@@ -191,13 +195,8 @@ const updateEmployee = async () => {
     getEmployees();
 }
 
-const logEvent = () => {
-    console.log(event.target.id);
-}
-
 //to do button event listener
 $('#todobutton').on('click', createToDo);
-
 
 //smooth scroll when clicking buttons
 // credit: https://dev.to/attacomsian/smooth-scroll-to-page-section-with-jquery-2jng#:~:text=Here%20is%20a%20little%20jQuery,This%20value%20is%20in%20milliseconds.
